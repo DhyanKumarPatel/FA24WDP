@@ -35,7 +35,7 @@ Table 3: Blog Reference
 
 The blog reference table holds a multi-valued attribute, i.e., reference. Whenever an author is writing a blog/article, they refer various writings from different articles/blogs; these attributes hold all the link's or names that the author refers to in the given blog. This is like giving credit to original authors and showing the individuality/uniqueness in the given blog.
 
-![Blog Reference!](./images/Readme%20images/Assignment-4(Relation).pdf.drawio.png "Blog Reference Table")
+![Blog Reference!](./images/Readme%20images/Database%20images/BR.png "Blog Reference Table")
 
 Table 4:  Comment
 
@@ -54,5 +54,7 @@ Table 6: Review
 In the review table, "reviewID" is the primary key as it shows all the individual reviews. It also has content, likes, ratings, and a blog_id. The user_id shows the result of the review to the user and the blog.
 
 ![Review!](./images/Readme%20images/Database%20images/review.png "Review Table")
+
+All the created Tables.
 
 ![Table!](./images/Readme%20images/Database%20images/tables.png "Table")
