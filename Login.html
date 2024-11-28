@@ -18,7 +18,7 @@
     <h1>Login</h1>
     </div>
     <hr>
-    <form class="main">
+    <form class="main" id="loginForm">
         
           
         <div class="Profile-photo">
@@ -27,10 +27,10 @@
     
         <div class="container">
             <label for="userName" ><b>UserName: </b></label>
-            <input type="text" name="userName" id="" placeholder="Enter the User Name" required><br><br>
+            <input type="text" name="userName" id="username" placeholder="Enter the User Name" required><br><br>
     
             <label for="password"><b>Password:  </b></label>
-            <input type="password" name="password" placeholder="Enter the valid password" required><br><br>
+            <input type="password" id="pswd" name="password" placeholder="Enter the valid password" required><br><br>
     
             <button class="myButton" type="submit"><b>login</b></button><br>
     
@@ -55,4 +55,9 @@
         <a href="./registration.html">SIGN UP</a>
     </div>
    
+    <script src="./scripts/user.js"></script>
+    <script src="./scripts/main.js"></script>
+
+
+    </body>
 </html>

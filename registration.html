@@ -11,35 +11,35 @@
     
 
 <video autoplay muted loop id="myVideo">
-    <source src="./video/3129769-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    <!-- <source src="./video/3129769-uhd_3840_2160_30fps.mp4" type="video/mp4"> -->
     Your browser does not support the video tag.
 </video>
 
 <h1>Registration Form</h1>
 
-<form action="mailto:dhyanp92@gmail.com">
+<form action="mailto:dhyanp92@gmail.com" id="regForm">
     <fieldset>
         <legend>Name</legend>
-        <label for="fname">FirstName <input type="text" name="firstname" placeholder="First Name"></label>
-        <label for="mname">MiddleName <input type="text" name="middlename" placeholder="Middle Name"></label>
-        <label for="lname">LastName <input type="text" name="lastname" placeholder="Last Name"></label><br><br>
+        <label for="fname">FirstName <input type="text" id="fname" name="firstname" placeholder="First Name"></label>
+        <label for="mname">MiddleName <input type="text" id="mname" name="middlename" placeholder="Middle Name"></label>
+        <label for="lname">LastName <input type="text" id="lname" name="lastname" placeholder="Last Name"></label><br><br>
     </fieldset>
 
     <fieldset>
         <legend>Gender</legend>
-        <label>Male <input type="radio" name="gender" value="male"></label>
-        <label>Female <input type="radio" name="gender" value="female"></label>
-        <label>Other <input type="radio" name="gender" value="other"></label>
+        <label>Male <input type="radio" id="gender" name="gender" value="male"></label>
+        <label>Female <input type="radio" id="gender" name="gender" value="female"></label>
+        <label>Other <input type="radio" id="gender" name="gender" value="other"></label>
     </fieldset><br><br>
 
     <fieldset>
         <legend>E-mail</legend>
-        <label for="email">E-mail <input type="email" name="email" placeholder="Enter your email"></label>
+        <label for="email">E-mail <input type="email" id="username" name="email" placeholder="Enter your email"></label>
     </fieldset><br><br>
 
     <fieldset>
         <label for="password">Enter Password <input type="password" name="password" placeholder="Enter New Password"></label>
-        <label for="password">Confirm Password <input type="password" name="confirm-password" placeholder="Confirm Password"></label>
+        <label for="password">Confirm Password <input type="password" id="pswd" name="confirm-password" placeholder="Confirm Password"></label>
     </fieldset><br>
 
     <input type="submit" name="submit" class="myButton" value="Register">
@@ -50,6 +50,10 @@
     <p>Or Login using</p>
     <a href="./Login.html">Login</a>
 </div>
+
+
+<script src="./scripts/user.js"></script>
+<script src="./scripts/main.js"></script>
 
 </body>
 </html>
