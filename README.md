@@ -29,32 +29,32 @@ TABLE 2: Blog
 
 The blog table is used to give details about the individual blogs posted on the website. Each blog will have a "blog_id," which is the primary key in this case. "blog_title," which cannot be null. Other attributes like category, shares, agree/disagree give additional information about the individual blog. Here, user_id is a foreign key, which helps to relate the blog with its author/user.
 
-![Blog!](./images/Readme%20images/Database%20images/blog.png "Blog Table")
+![Blog!](./public/images/Readme%20images/Database%20images/blog.png "Blog Table")
 
 Table 3: Blog Reference
 
 The blog reference table holds a multi-valued attribute, i.e., reference. Whenever an author is writing a blog/article, they refer various writings from different articles/blogs; these attributes hold all the link's or names that the author refers to in the given blog. This is like giving credit to original authors and showing the individuality/uniqueness in the given blog.
 
-![Blog Reference!](./images/Readme%20images/Database%20images/BR.png "Blog Reference Table")
+![Blog Reference!](./public/images/Readme%20images/Database%20images/BR.png "Blog Reference Table")
 
 Table 4:  Comment
 
 Whenever a blog is displayed, another user wants to share their view about the blog. Comment is the best way to express. Here, in the comment table, comment_id is a primary key and user_id, reviewID, is a foreign key. Content is text.
 
-![Comment!](./images/Readme%20images/Database%20images/comment.png "Comment")
+![Comment!](./public/images/Readme%20images/Database%20images/comment.png "Comment")
 
 Table 5: Comment Reaction
 
 Comment reaction has "comment_id" as a foreign key, as it shows to which comment is reaction shown. Reactions can be emoji's.
 
-![Comment Reaction!](./images/Readme%20images/Database%20images/CR.png "Comment Reaction Table")
+![Comment Reaction!](./public/images/Readme%20images/Database%20images/CR.png "Comment Reaction Table")
 
 Table 6: Review
 
 In the review table, "reviewID" is the primary key as it shows all the individual reviews. It also has content, likes, ratings, and a blog_id. The user_id shows the result of the review to the user and the blog.
 
-![Review!](./images/Readme%20images/Database%20images/review.png "Review Table")
+![Review!](./public/images/Readme%20images/Database%20images/review.png "Review Table")
 
 All the created Tables.
 
-![Table!](./images/Readme%20images/Database%20images/tables.png "Table")
+![Table!](./public/images/Readme%20images/Database%20images/tables.png "Table")
