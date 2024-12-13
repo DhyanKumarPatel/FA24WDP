@@ -1,7 +1,7 @@
 const con = require("./db_connect")
 
 async function createTable() {
-  let sql = `CREATE TABLE blog (
+  let sql = `CREATE TABLE IF NOT EXISTS blog(
      blog_id INT PRIMARY KEY,
      blog_title VARCHAR(255) NOT NULL,
      category VARCHAR(50),

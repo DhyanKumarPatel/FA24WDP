@@ -5,7 +5,7 @@ const path = require('path')
 app.use(express.json()); // parses JSON bodies
 
 const userRoutes = require("./server/routes/user")
-// const recipeRoutes = require("./server/routes/recipe")
+const blogRoutes = require("./server/routes/blog")
 
 //CORS middleware
 app.use(function(req, res, next) {
@@ -19,6 +19,8 @@ app.use(express.static(__dirname + "/public"))
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + "/public/index.html")))
 
 app.use('/user', userRoutes)
+app.use('/blog', blogRoutes)
+
 
 
 const PORT = process.env.PORT || 3000

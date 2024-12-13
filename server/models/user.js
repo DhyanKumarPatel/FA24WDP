@@ -2,7 +2,7 @@ const con = require("./db_connect")
 
 async function createTable() {
   let sql = `CREATE TABLE IF NOT EXISTS user (
-     user_id INT PRIMARY KEY,
+     user_id INT PRIMARY KEY AUTO_INCREMENT,
      username VARCHAR(255) NOT NULL,
      password VARCHAR(255) NOT NULL,
      firstname VARCHAR(255) NOT NULL,
@@ -56,8 +56,8 @@ async function register(user) {
   if(email.length > 0) throw Error("Account with Email already in use")
 
   let sql = `
-    INSERT INTO User(Username, Password, Email)
-    VALUES("${user.username}", "${user.password}", "${user.email}")
+    INSERT INTO User(user_id, username, password, email, firstname, lastname)
+    VALUES(${user.user_id}, "${user.username}", "${user.password}", "${user.email}", "${user.firstname}", "${user.lastname}")
   `
   await con.query(sql)
   const u = await userExists(user.username)
